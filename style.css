@@ -5,12 +5,15 @@ body {
 
 header {
     width: 100%;
-    height: 50px;
+    height: 5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
     padding: 0 5%;
+    background-color: aliceblue;
+    z-index: 99;
+    margin-top: -50px;
 }
 
 #menu_control {
@@ -19,12 +22,13 @@ header {
 
 #menu_control:checked~nav {
     display: block;
+    left: 0px;
 }
 
 #menu_control:checked~.menu_icon {
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
+    height: 2rem;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3E%3Cpath fill='%23000' d='m12 14.122l5.303 5.303a1.5 1.5 0 0 0 2.122-2.122L14.12 12l5.304-5.303a1.5 1.5 0 1 0-2.122-2.121L12 9.879L6.697 4.576a1.5 1.5 0 1 0-2.122 2.12L9.88 12l-5.304 5.304a1.5 1.5 0 1 0 2.122 2.12z'/%3E%3C/g%3E%3C/svg%3E");
     background-color: currentColor;
     -webkit-mask-image: var(--svg);
@@ -34,12 +38,13 @@ header {
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     z-index: 100;
+    position: fixed;
 }
 
 .menu_icon {
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
+    height: 2rem;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' d='M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75m0 4A.75.75 0 0 1 2.75 7h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 7.75m0 4a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75'/%3E%3C/svg%3E");
     background-color: currentColor;
     -webkit-mask-image: var(--svg);
@@ -53,24 +58,24 @@ header {
 }
 
 nav {
-    background-color: white;
+    background-image: linear-gradient(150deg, rgba(227, 248, 255, 0.80) 0%, #29c8ff 100%);
+    backdrop-filter: blur(15px);
     width: 100vw;
     height: 100vh;
     position: fixed;
-    margin-bottom: -92.5vh;
-    margin-left: -5%;
     padding: 15% 5% 5% 5%;
     z-index: 99;
-    display: none;
+    display: block;
+    top: 0px;
+    left: -70vh;
 }
-
 nav ul {
     width: 100%;
     height: 100%;
     background-color: transparent;
 }
 nav ul li{
-    font-size: 2rem;
+    font-size: 5rem;
 }
 nav ul li a{
     display: inline-block;
@@ -86,29 +91,29 @@ nav ul li a:hover{
 }
 
 .logo_img {
-    width: 69px;
-    height: 15px;
+    width: 8rem;
+    height: 1.8rem;
 }
 
 .logo_img a {
-    width: 69px;
-    height: 15px;
+    width: 8rem;
+    height: 1.8rem;
 }
 
 .logo_img img {
-    width: 69px;
-    height: 15px;
+    width: 8rem;
+    height: 1.8rem;
 }
 
 .nav_login {
-    width: 16px;
-    height: 16px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .login_icon {
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 2rem;
+    height: 2rem;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23000' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='M24 20a7 7 0 1 0 0-14a7 7 0 0 0 0 14M6 40.8V42h36v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C35.92 28 33.68 28 29.2 28H18.8c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496C6 34.08 6 36.32 6 40.8'/%3E%3C/svg%3E");
     background-color: currentColor;
     -webkit-mask-image: var(--svg);
@@ -122,7 +127,8 @@ nav ul li a:hover{
 
 .banner {
     position: relative;
-    font-size: 2em;
+    font-size: 2rem;
+    margin-top: 50px;
 }
 
 .banner_img {
@@ -136,16 +142,16 @@ nav ul li a:hover{
 
 .banner_text1 p {
     position: absolute;
-    margin: -200px 0 0 50px;
-    font-weight: 900;
-    font-size: 2rem;
+    margin: -30% 0 0 10%;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .banner_text2 p {
     position: absolute;
-    margin: -150px 0 0 50px;
+    margin: -23% 0 0 10%;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
 .item_meaning {
