@@ -1,11 +1,12 @@
 body {
     position: relative;
     font-size: 12px;
+    box-sizing: border-box;
 }
 
 header {
     width: 100%;
-    height: 5vh;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,7 +66,7 @@ nav {
     position: fixed;
     padding: 15% 5% 5% 5%;
     z-index: 99;
-    display: block;
+    display: none;
     top: 0px;
     left: -70vh;
 }
@@ -75,7 +76,7 @@ nav ul {
     background-color: transparent;
 }
 nav ul li{
-    font-size: 5rem;
+    font-size: 2.5rem;
 }
 nav ul li a{
     display: inline-block;
@@ -203,4 +204,59 @@ nav ul li a:hover{
     background-color: #29C8FF;
     color: aliceblue;
     font-size: 12px;
+}
+
+.about_block{
+    background-image: linear-gradient(150deg, #D5F5F2 0%, #29c8ff 100%);
+    width: 100vw;
+    height: 100%;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+.about_block h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.info_block{
+    width: 90vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.489);
+    backdrop-filter: invert(5%);
+    margin: 10% auto 0 auto;
+    border: #fff 1px solid;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+    
+}
+.info{
+    margin: 2rem auto;    
+}
+.info_img{
+    background-image: url(img/portfolio-img.webp);
+    width: 15rem;
+    height: 15rem;
+    margin: 0 auto 20px auto;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.20);
+    border: #fff 1px solid;
+}
+.info_name{
+    color: black;
+    text-align: center;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info_name p{
+    border-left: #fff 2px solid;
+    border-right: #fff 2px solid;
+    background-color: #ffffff30;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
 }
