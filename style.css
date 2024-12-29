@@ -210,33 +210,36 @@ nav ul li a:hover{
     background-image: linear-gradient(150deg, #D5F5F2 0%, #29c8ff 100%);
     width: 100vw;
     height: 100%;
-    padding-top: 50px;
+    padding-top: 20px;
     margin-top: 50px;
 }
 .about_block h1{
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
+    font-weight: 900;
 }
 .info_block{
     width: 90vw;
-    height: 100vh;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.489);
     backdrop-filter: invert(5%);
     margin: 10% auto 0 auto;
     border: #fff 1px solid;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
-    
+    padding: 0 30px;
 }
 .info{
-    margin: 2rem auto;    
+    margin: 30px auto;
+    padding-bottom: 20px;
+    border-bottom: #fff 1px solid;
 }
 .info_img{
     background-image: url(img/portfolio-img.webp);
-    width: 15rem;
-    height: 15rem;
-    margin: 0 auto 20px auto;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto 10px auto;
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -248,7 +251,7 @@ nav ul li a:hover{
     text-align: center;
     width: 100%;
     height: 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -259,4 +262,33 @@ nav ul li a:hover{
     background-color: #ffffff30;
     padding: 0.5rem 1.5rem;
     border-radius: 20px;
+    font-weight: 700;
+}
+.info_title{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.info_title p{
+    display: inline-block;
+    padding: 5px;
+    border-bottom: #fff 1px solid;
+}
+.info_content{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+}
+.info_content p{
+    font-weight: 300;
+}
+.info_date{
+    font-size: 0.6rem;
+    color: #7d7d7d;
+    margin-top: 5px;
+    font-weight: 200;
+}
+.info_content ul li{
+    margin-bottom: 5px;
 }
