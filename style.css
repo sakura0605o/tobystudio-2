@@ -141,11 +141,11 @@ nav ul li a:hover {
 
 .banner_img {
     width: 100%;
-}
-
-.banner_img img {
-    width: 100%;
-    object-fit: cover;
+    height: 55vw;
+    background-image: url(img/background-1.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
 }
 
 .banner_text1 p {
@@ -162,39 +162,119 @@ nav ul li a:hover {
     font-size: 1.8rem;
 }
 
-.item_meaning {
-    width: 100%;
-    height: 300px;
-    background-color: aqua;
-}
-
 .item {
     width: 100%;
-    height: 300px;
-    background-color: #fff;
-    /* border: black solid 1px; */
-    padding: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    padding: 2vw;
 }
 
 .item_title {
     width: 100%;
-    font-size: 1.2em;
+    height: 30%;
+    font-size: 1.5rem;
     text-align: center;
+    font-weight: 700;
+    margin: 3rem 0;
 }
 
 .item_content {
     width: 100%;
+    height: 70%;
+    margin: 6rem 0;
+}
+
+.concept_formula {
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+}
+
+.formula_name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+    margin-right: 0.8rem;
+}
+
+.formula_plus {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 5v14m-7-7h14'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    margin-top: 0.2rem;
+    margin-right: 0.8rem;
+}
+
+.formula_storm {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M16 21a5 5 0 1 1 5-5a5.006 5.006 0 0 1-5 5m0-8a3 3 0 1 0 3 3a3.003 3.003 0 0 0-3-3'/%3E%3Cpath fill='%23000' d='m22.652 4.182l-2.177 2.514l-1.404 1.621l1.715 1.288A7.94 7.94 0 0 1 23.996 16l.001.058l.002.041c.018.432.241 10.111-14.654 11.722l2.18-2.517l1.404-1.621l-1.715-1.288A7.94 7.94 0 0 1 8.004 16l-.001-.058L8 15.901c-.018-.431-.24-10.094 14.651-11.719M24.998 2l-.05.001C5.254 2.915 6.005 16 6.005 16a9.98 9.98 0 0 0 4.01 7.995l-3.777 4.36A1.004 1.004 0 0 0 7.002 30l.05-.001C26.747 29.085 25.996 16 25.996 16a9.98 9.98 0 0 0-4.009-7.995l3.776-4.36A1.004 1.004 0 0 0 24.998 2'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    margin-right: 0.8rem;
+}
+
+.formula_equals {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M18 9.998H6a1 1 0 1 1 0-2h12a1 1 0 0 1 0 2m0 6H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    margin-top: 0.2rem;
+    margin-right: 0.8rem;
+}
+
+.formula_logo {
+    background-image: url(img/toby5-horizon-newcolor.png);
+    background-size: cover;
+    width: 5.2rem;
+    height: 2.5rem;
 }
 
 .meaning_content {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.meaning_content p {
+    display: inline-block;
+    width: auto;
+    padding: 1rem;
+    border-left: #29C8FF 2px solid;
+    border-right: #29C8FF 2px solid;
+    border-radius: 50px;
+    background-image: linear-gradient(150deg, rgba(227, 248, 255, 0.30) 0%, rgba(41, 200, 255,0.20) 100%);
+    color: #29C8FF;
 }
 
 .color_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color_content_colornum {
     width: 150px;
     height: 150px;
     background-color: #29C8FF;
@@ -203,6 +283,8 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     color: aliceblue;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .footer {
@@ -214,7 +296,8 @@ nav ul li a:hover {
     margin-top: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20);
 }
-.footer_img{
+
+.footer_img {
     background-image: url(img/toby5-horizon-white.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -223,27 +306,31 @@ nav ul li a:hover {
     margin: auto;
     margin-bottom: 1.5rem;
 }
-.footer_menu{
+
+.footer_menu {
     width: 100%;
     margin-bottom: 1.5rem;
 }
-.footer_menu ul{
+
+.footer_menu ul {
     display: flex;
     width: 80%;
     height: 100%;
     justify-content: space-around;
     margin: 0 auto;
 }
-.footer_menu ul a{
+
+.footer_menu ul a {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
     font-size: 1.2rem;
 }
-.copyright{
- font-weight: 200;
- font-size: 0.6rem;
- text-align: right;
+
+.copyright {
+    font-weight: 200;
+    font-size: 0.6rem;
+    text-align: right;
 }
 
 
@@ -355,7 +442,8 @@ nav ul li a:hover {
     width: 100vw;
     padding: 30px 0;
 }
-.portfolio_block a{
+
+.portfolio_block a {
     display: block;
     width: 90%;
     text-decoration: none;
@@ -373,10 +461,12 @@ nav ul li a:hover {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20);
     transition: all 0.5s 0s ease-in-out;
 }
-.option_block:hover{
+
+.option_block:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.50);
 }
-.option_block_filter{
+
+.option_block_filter {
     width: 100%;
     height: 100%;
     padding: 0 15px;
@@ -384,13 +474,15 @@ nav ul li a:hover {
     align-items: center;
     transition: all 1s 0s ease-in-out;
 }
-.option_block_filter:hover{
+
+.option_block_filter:hover {
     backdrop-filter: hue-rotate(180deg);
 }
+
 .opt_img_block {
     width: 42%;
     height: 80%;
-    margin-right:1.5%;
+    margin-right: 1.5%;
 }
 
 .opt_img {
@@ -405,6 +497,7 @@ nav ul li a:hover {
     background-position: center;
     background-size: cover;
 }
+
 .opt_img_2 {
     background-image: url(img/creditcard\ page.png);
     background-position: center;
@@ -416,13 +509,15 @@ nav ul li a:hover {
     height: 85%;
     margin-left: 1.5%;
 }
-.opt_title{
+
+.opt_title {
     font-weight: 700;
     font-size: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 0.2rem;
 }
-.opt_describe{
+
+.opt_describe {
     font-weight: 200;
     color: #5c5c5c;
     font-size: 0.7rem;
