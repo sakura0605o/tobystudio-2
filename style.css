@@ -1,12 +1,12 @@
 body {
     position: relative;
-    font-size: 12px;
+    font-size: 10px;
     box-sizing: border-box;
 }
 
 header {
     width: 100%;
-    height: 8vh;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,7 +55,7 @@ header {
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     color: #29C8FF;
-    
+
 }
 
 nav {
@@ -70,23 +70,27 @@ nav {
     top: 0px;
     left: -70vh;
 }
+
 nav ul {
     width: 100%;
     height: 100%;
     background-color: transparent;
 }
-nav ul li{
+
+nav ul li {
     font-size: 1.8rem;
 }
-nav ul li a{
+
+nav ul li a {
     display: inline-block;
     text-decoration: none;
     color: black;
     border-bottom: transparent 0px solid;
     margin-bottom: 5%;
-    transition: all 0.3s 0s ease-in-out ;
+    transition: all 0.3s 0s ease-in-out;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     border-bottom: #29C8FF 1px solid;
     color: #29C8FF;
 }
@@ -206,20 +210,26 @@ nav ul li a:hover{
     font-size: 12px;
 }
 
-.about_block{
-    background-image: linear-gradient(150deg, #D5F5F2 0%, #29c8ff 100%);
+.article_block {
+    background-color: #fff;
     width: 100vw;
     height: 100%;
     padding-top: 20px;
     margin-top: 50px;
 }
-.about_block h1{
+
+.about_block {
+    background-image: linear-gradient(150deg, #D5F5F2 0%, #29c8ff 100%);
+}
+
+.article_block h1 {
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
     font-weight: 900;
 }
-.info_block{
+
+.info_block {
     width: 90vw;
     height: auto;
     background-color: rgba(255, 255, 255, 0.489);
@@ -230,12 +240,14 @@ nav ul li a:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
     padding: 0 30px;
 }
-.info{
+
+.info {
     margin: 30px auto;
     padding-bottom: 20px;
     border-bottom: #fff 1px solid;
 }
-.info_img{
+
+.info_img {
     background-image: url(img/portfolio-img.webp);
     width: 10rem;
     height: 10rem;
@@ -246,7 +258,8 @@ nav ul li a:hover{
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.20);
     border: #fff 1px solid;
 }
-.info_name{
+
+.info_name {
     color: black;
     text-align: center;
     width: 100%;
@@ -256,7 +269,8 @@ nav ul li a:hover{
     align-items: center;
     justify-content: center;
 }
-.info_name p{
+
+.info_name p {
     border-left: #fff 2px solid;
     border-right: #fff 2px solid;
     background-color: #ffffff30;
@@ -264,31 +278,116 @@ nav ul li a:hover{
     border-radius: 20px;
     font-weight: 700;
 }
-.info_title{
+
+.info_title {
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 15px;
     font-weight: 700;
 }
-.info_title p{
+
+.info_title p {
     display: inline-block;
     padding: 5px;
     border-bottom: #fff 1px solid;
 }
-.info_content{
+
+.info_content {
     text-align: center;
     font-size: 0.8rem;
     margin-bottom: 30px;
 }
-.info_content p{
+
+.info_content p {
     font-weight: 300;
 }
-.info_date{
+
+.info_date {
     font-size: 0.6rem;
     color: #7d7d7d;
     margin-top: 5px;
     font-weight: 200;
 }
-.info_content ul li{
+
+.info_content ul li {
     margin-bottom: 5px;
+}
+
+.portfolio_block {
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px 0;
+}
+.portfolio_block a{
+    display: block;
+    width: 90%;
+    text-decoration: none;
+    color: black;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.option_block {
+    background-image: linear-gradient(120deg, #93efbc 30%, #57d5ff 100%);
+    width: 100%;
+    height: 30vw;
+    border-radius: 20px;
+    border: #fff 1px solid;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20);
+    transition: all 0.5s 0s ease-in-out;
+}
+.option_block:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.50);
+}
+.option_block_filter{
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    transition: all 1s 0s ease-in-out;
+}
+.option_block_filter:hover{
+    backdrop-filter: hue-rotate(180deg);
+}
+.opt_img_block {
+    width: 42%;
+    height: 80%;
+    margin-right:1.5%;
+}
+
+.opt_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: #ffffff9e 1px solid;
+}
+
+.opt_img_1 {
+    background-image: url(img/calculator.png);
+    background-position: center;
+    background-size: cover;
+}
+.opt_img_2 {
+    background-image: url(img/creditcard\ page.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.opt_content_block {
+    width: 55%;
+    height: 85%;
+    margin-left: 1.5%;
+}
+.opt_title{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+.opt_describe{
+    font-weight: 200;
+    color: #5c5c5c;
+    font-size: 0.7rem;
 }
