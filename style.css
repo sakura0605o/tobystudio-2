@@ -10,7 +10,7 @@ body {
 header {
     width: 100%;
     height: 70px;
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -71,7 +71,7 @@ nav {
     z-index: 99;
     display: none;
     top: 0px;
-    left: -70vh;
+    left: 100vh;
 }
 
 nav ul {
@@ -82,6 +82,7 @@ nav ul {
 
 nav ul li {
     font-size: 1.8rem;
+    font-weight: 900;
 }
 
 nav ul li a {
@@ -142,7 +143,7 @@ nav ul li a:hover {
 .banner_img {
     width: 100%;
     height: 55vw;
-    background-image: url(img/background-1.JPG);
+    background-image: url(img/toby-newcolor-background.SVG);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 20px;
@@ -521,4 +522,116 @@ nav ul li a:hover {
     font-weight: 200;
     color: #5c5c5c;
     font-size: 0.7rem;
+}
+
+@media (min-width:768px){
+    .menu_icon{
+        display: none;
+    }
+    header{
+        height: 70px;
+        justify-content: flex-start;
+    }
+    .logo_img{
+        width: 100%;
+    }
+    nav{
+        left: 0px;
+        display: block;
+        position:static; 
+        width: auto;
+        height: 100%;
+        padding: 0;
+        background-image:none;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+    
+    nav ul li{
+        font-size: 1rem;
+        margin-right: 2rem;
+    }
+
+    nav ul li a {
+        border-bottom: transparent 0px solid;
+        margin-bottom: 0px;
+    }
+    .banner{
+        max-height: 35vw;
+    }
+    .banner_img{
+        max-height: 35vw;
+        background-position: bottom;
+        background-size: cover;
+        margin: auto;
+    }
+    .item{
+        height: 25vw;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20% ;
+        grid-template-rows: 100%;
+        padding: 0;
+    }
+    .item_title{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        display: flex;
+        align-items: flex-end;
+    }
+    .item_content{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item_title p{
+        width: 100%;
+        font-size: 5vw;
+        padding: 2vw;
+        line-height: 7vw;
+        color: #fff;
+    }
+    .concept_title{
+        grid-column-start: 1;
+        grid-column-end: 3; 
+        text-align: right;       
+    }
+    .concept_formula{
+        width: 100%;
+        height: 100%;
+        grid-column-start: 3;
+        grid-column-end: 6;
+    }
+    .meaning_title{
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align: left;
+    }
+    .meaning_content{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .color_title{
+        grid-column-start: 1;
+        grid-column-end: 3; 
+        text-align: right;  
+    }
+    .color_content{
+        grid-column-start: 3;
+        grid-column-end: 6;
+    }
 }
