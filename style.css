@@ -10,7 +10,7 @@ body {
 header {
     width: 100%;
     height: 70px;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -265,7 +265,7 @@ nav ul li a:hover {
     border-left: #29C8FF 2px solid;
     border-right: #29C8FF 2px solid;
     border-radius: 50px;
-    background-image: linear-gradient(150deg, rgba(227, 248, 255, 0.30) 0%, rgba(41, 200, 255,0.20) 100%);
+    background-image: linear-gradient(150deg, rgba(227, 248, 255, 0.30) 0%, rgba(41, 200, 255, 0.20) 100%);
     color: #29C8FF;
 }
 
@@ -461,6 +461,7 @@ nav ul li a:hover {
     border: #fff 1px solid;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20);
     transition: all 0.5s 0s ease-in-out;
+    margin: 0 auto;
 }
 
 .option_block:hover {
@@ -491,18 +492,19 @@ nav ul li a:hover {
     height: 100%;
     border-radius: 10px;
     border: #ffffff9e 1px solid;
+    background-position: center;
+    background-size: cover;
 }
 
 .opt_img_1 {
     background-image: url(img/calculator.png);
-    background-position: center;
-    background-size: cover;
 }
 
 .opt_img_2 {
     background-image: url(img/creditcard\ page.png);
-    background-position: center;
-    background-size: cover;
+}
+.opt_img_3{
+    background-image: url(img/dumpling-2.png);
 }
 
 .opt_content_block {
@@ -524,27 +526,31 @@ nav ul li a:hover {
     font-size: 0.7rem;
 }
 
-@media (min-width:768px){
-    .menu_icon{
+@media (min-width:768px) {
+    .menu_icon {
         display: none;
     }
-    header{
+
+    header {
         height: 70px;
         justify-content: flex-start;
     }
-    .logo_img{
+
+    .logo_img {
         width: 100%;
     }
-    nav{
+
+    nav {
         left: 0px;
         display: block;
-        position:static; 
+        position: static;
         width: auto;
         height: 100%;
         padding: 0;
-        background-image:none;
+        background-image: none;
     }
-    nav ul{
+
+    nav ul {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -552,8 +558,8 @@ nav ul li a:hover {
         height: 100%;
         background-color: transparent;
     }
-    
-    nav ul li{
+
+    nav ul li {
         font-size: 1rem;
         margin-right: 2rem;
     }
@@ -562,23 +568,27 @@ nav ul li a:hover {
         border-bottom: transparent 0px solid;
         margin-bottom: 0px;
     }
-    .banner{
+
+    .banner {
         max-height: 35vw;
     }
-    .banner_img{
+
+    .banner_img {
         max-height: 35vw;
         background-position: bottom;
         background-size: cover;
         margin: auto;
     }
-    .item{
+
+    .item {
         height: 25vw;
         display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20% ;
+        grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-rows: 100%;
         padding: 0;
     }
-    .item_title{
+
+    .item_title {
         margin: 0;
         width: 100%;
         height: 100%;
@@ -586,7 +596,8 @@ nav ul li a:hover {
         display: flex;
         align-items: flex-end;
     }
-    .item_content{
+
+    .item_content {
         margin: 0;
         width: 100%;
         height: 100%;
@@ -594,44 +605,84 @@ nav ul li a:hover {
         justify-content: center;
         align-items: center;
     }
-    .item_title p{
+
+    .item_title p {
         width: 100%;
         font-size: 5vw;
         padding: 2vw;
         line-height: 7vw;
         color: #fff;
     }
-    .concept_title{
+
+    .concept_title {
         grid-column-start: 1;
-        grid-column-end: 3; 
-        text-align: right;       
+        grid-column-end: 3;
+        text-align: right;
     }
-    .concept_formula{
+
+    .concept_formula {
         width: 100%;
         height: 100%;
         grid-column-start: 3;
         grid-column-end: 6;
     }
-    .meaning_title{
+
+    .formula_name {
+        font-size: 3vw;
+        margin-right: 30px;
+    }
+
+    .formula_icon {
+        width: 2.1vw;
+        height: 2.1vw;
+        margin-right: 30px;
+    }
+
+    .formula_storm {
+        width: 3.5vw;
+        height: 3.5vw;
+        margin-right: 30px;
+    }
+
+    .formula_logo {
+        width: 10.35vw;
+        height: 5vw;
+    }
+
+    .meaning_title {
         grid-column-start: 4;
         grid-column-end: 6;
         grid-row-start: 1;
         grid-row-end: 2;
         text-align: left;
     }
-    .meaning_content{
+
+    .meaning_content {
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
     }
-    .color_title{
+
+    .color_title {
         grid-column-start: 1;
-        grid-column-end: 3; 
-        text-align: right;  
+        grid-column-end: 3;
+        text-align: right;
     }
-    .color_content{
+
+    .color_content {
         grid-column-start: 3;
         grid-column-end: 6;
+    }
+    .color_content_colornum{
+        width: 12.5vw;
+        height: 12.5vw;
+    }
+    .color_content_colornum p{
+        font-size: 1.2vw;
+    }
+    .option_block {
+        max-width: 80%;
+        max-height: 300px;
     }
 }
