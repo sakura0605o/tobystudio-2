@@ -2,7 +2,6 @@ body {
     position: relative;
     font-size: 10px;
     box-sizing: border-box;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -151,16 +150,18 @@ nav ul li a:hover {
 
 .banner_text1 p {
     position: absolute;
-    margin: -30% 0 0 10%;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 5vw;
+    top: 35vw;
+    left: 7vw;
 }
 
 .banner_text2 p {
     position: absolute;
-    margin: -23% 0 0 10%;
     font-weight: 900;
-    font-size: 1.8rem;
+    font-size: 7vw;
+    top: 42vw;
+    left: 7vw;
 }
 
 .item {
@@ -171,7 +172,7 @@ nav ul li a:hover {
 .item_title {
     width: 100%;
     height: 30%;
-    font-size: 1.5rem;
+    font-size: 6vw;
     text-align: center;
     font-weight: 700;
     margin: 3rem 0;
@@ -185,23 +186,22 @@ nav ul li a:hover {
 
 .concept_formula {
     display: flex;
-    padding: 0 20px;
     justify-content: center;
     align-items: center;
-    height: 2.5rem;
+    height: 15vw;
 }
 
 .formula_name {
     font-weight: 700;
-    font-size: 1.2rem;
-    padding-top: 0.5rem;
-    margin-right: 0.8rem;
+    font-size: 6vw;
+    padding-top: 1vw;
+    margin-right: 2vw;
 }
 
 .formula_plus {
     display: inline-block;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 5vw;
+    height: 5vw;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 5v14m-7-7h14'/%3E%3C/svg%3E");
     background-color: currentColor;
     -webkit-mask-image: var(--svg);
@@ -210,14 +210,14 @@ nav ul li a:hover {
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
-    margin-top: 0.2rem;
-    margin-right: 0.8rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .formula_storm {
     display: inline-block;
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 8vw;
+    height: 8vw;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M16 21a5 5 0 1 1 5-5a5.006 5.006 0 0 1-5 5m0-8a3 3 0 1 0 3 3a3.003 3.003 0 0 0-3-3'/%3E%3Cpath fill='%23000' d='m22.652 4.182l-2.177 2.514l-1.404 1.621l1.715 1.288A7.94 7.94 0 0 1 23.996 16l.001.058l.002.041c.018.432.241 10.111-14.654 11.722l2.18-2.517l1.404-1.621l-1.715-1.288A7.94 7.94 0 0 1 8.004 16l-.001-.058L8 15.901c-.018-.431-.24-10.094 14.651-11.719M24.998 2l-.05.001C5.254 2.915 6.005 16 6.005 16a9.98 9.98 0 0 0 4.01 7.995l-3.777 4.36A1.004 1.004 0 0 0 7.002 30l.05-.001C26.747 29.085 25.996 16 25.996 16a9.98 9.98 0 0 0-4.009-7.995l3.776-4.36A1.004 1.004 0 0 0 24.998 2'/%3E%3C/svg%3E");
     background-color: currentColor;
     -webkit-mask-image: var(--svg);
@@ -226,13 +226,13 @@ nav ul li a:hover {
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
-    margin-right: 0.8rem;
+    margin-right: 2vw;
 }
 
 .formula_equals {
     display: inline-block;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 5vw;
+    height: 5vw;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M18 9.998H6a1 1 0 1 1 0-2h12a1 1 0 0 1 0 2m0 6H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2'/%3E%3C/svg%3E");
     background-color: currentColor;
     -webkit-mask-image: var(--svg);
@@ -241,27 +241,27 @@ nav ul li a:hover {
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
-    margin-top: 0.2rem;
-    margin-right: 0.8rem;
+    margin-right: 2vw;
 }
 
 .formula_logo {
     background-image: url(img/toby5-horizon-newcolor.png);
     background-size: cover;
-    width: 5.2rem;
-    height: 2.5rem;
+    width: 25vw;
+    height: 12vw;
+    margin-left: 2vw;
 }
 
 .meaning_content {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 5vw;
     font-weight: 900;
 }
 
 .meaning_content p {
     display: inline-block;
     width: auto;
-    padding: 1rem;
+    padding: 5vw;
     border-left: #29C8FF 2px solid;
     border-right: #29C8FF 2px solid;
     border-radius: 50px;
@@ -290,11 +290,10 @@ nav ul li a:hover {
 
 .footer {
     width: 100%;
+    height: 55vw;
     background-color: #29C8FF;
     color: aliceblue;
-    font-size: 12px;
     padding-top: 20px;
-    margin-top: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20);
 }
 
@@ -328,10 +327,47 @@ nav ul li a:hover {
     font-size: 1.2rem;
 }
 
+.footer_contact{
+    display: flex;
+    height: 8vw;
+    margin: 0 25vw 5vw 25vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20vw;
+}
+
+.contact_icon {
+    display: inline-block;
+    width: 5vw;
+    height: 5vw;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m7 9l3.75 3a2 2 0 0 0 2.5 0L17 9m4 8V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    margin-right: 2vw;
+    color: #29C8FF;
+  }
+
+  .contact_mail{
+    font-size: 3vw;
+    font-weight: 900;
+    color: #29C8FF;
+    padding: 2vw 0 ;
+    line-height: 8vw;
+  }
+
 .copyright {
     font-weight: 200;
     font-size: 0.6rem;
-    text-align: right;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 12%;
 }
 
 
@@ -503,7 +539,8 @@ nav ul li a:hover {
 .opt_img_2 {
     background-image: url(img/creditcard\ page.png);
 }
-.opt_img_3{
+
+.opt_img_3 {
     background-image: url(img/dumpling-2.png);
 }
 
@@ -573,6 +610,18 @@ nav ul li a:hover {
         max-height: 35vw;
     }
 
+    .banner_text1 p {
+        font-size: 2vw;
+        top: 20vw;
+        left: 7vw;
+    }
+    
+    .banner_text2 p {
+        font-size: 3vw;
+        top: 25vw;
+        left: 7vw;
+    }
+
     .banner_img {
         max-height: 35vw;
         background-position: bottom;
@@ -581,7 +630,7 @@ nav ul li a:hover {
     }
 
     .item {
-        height: 25vw;
+        height: 30vw;
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-rows: 100%;
@@ -629,24 +678,29 @@ nav ul li a:hover {
 
     .formula_name {
         font-size: 3vw;
+        margin: 0;
         margin-right: 30px;
     }
 
     .formula_icon {
         width: 2.1vw;
         height: 2.1vw;
+        margin: 0;
         margin-right: 30px;
     }
 
     .formula_storm {
         width: 3.5vw;
         height: 3.5vw;
+        margin: 0;
         margin-right: 30px;
     }
 
     .formula_logo {
         width: 10.35vw;
         height: 5vw;
+        margin: 0;
+        margin-left: 10px;
     }
 
     .meaning_title {
@@ -662,6 +716,15 @@ nav ul li a:hover {
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
+        font-size: 2vw;
+    }
+
+    .meaning_content p {
+        border-left: #29C8FF 0.2vw solid;
+        border-right: #29C8FF 0.2vw solid;
+        border-radius: 10vw;
+        background-image: linear-gradient(150deg, rgba(227, 248, 255, 0.30) 0%, rgba(41, 200, 255, 0.20) 100%);
+        color: #29C8FF;
     }
 
     .color_title {
@@ -674,15 +737,75 @@ nav ul li a:hover {
         grid-column-start: 3;
         grid-column-end: 6;
     }
-    .color_content_colornum{
-        width: 12.5vw;
-        height: 12.5vw;
+
+    .color_content_colornum {
+        width: 15vw;
+        height: 15vw;
     }
-    .color_content_colornum p{
+
+    .color_content_colornum p {
         font-size: 1.2vw;
     }
+
     .option_block {
         max-width: 80%;
         max-height: 300px;
+    }
+    .footer{
+        padding: 0;
+        width: 100%;
+        height: 11vw;
+        display: block;
+    }
+    .footer_nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        height: 88%;
+    }
+    .footer_img{
+        width: 6.2vw;
+        height: 3vw;
+        margin: 0;
+    }
+    .footer_menu{
+        width: auto;
+        height: 100%;
+        margin: 0;
+    }
+    .footer_menu ul{
+        align-items: center;
+        margin: 0;
+        margin-right: 1vw;
+    }
+    .footer_menu ul a{
+        margin-right: 10vw;
+    }
+    .footer_contact{
+        height: 2vw;
+        margin: 0;
+    }
+
+    .contact_icon{
+        width: 1.5vw;
+        height: 1.5vw;
+        margin: 0;
+        margin: 0 0.5vw;
+    }
+    .contact_mail{
+        font-size: 0.8vw;
+        line-height: 2vw;
+        margin-right: 0.5vw;
+      }
+    .copyright {
+        font-weight: 200;
+        font-size: 0.6rem;
+        height: 12%;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        margin-top: -0.1vw;
     }
 }
