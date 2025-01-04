@@ -630,7 +630,7 @@ nav ul li a:hover {
     }
 
     .item {
-        height: 30vw;
+        height: 35vw;
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-rows: 100%;
