@@ -407,7 +407,7 @@ nav ul li a:hover {
 }
 
 .info_img {
-    background-image: url(img/portfolio-img.webp);
+    background-image: url(img/portfolio-img-3.jpg);
     width: 10rem;
     height: 10rem;
     margin: 0 auto 10px auto;
@@ -416,6 +416,14 @@ nav ul li a:hover {
     border-radius: 50%;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.20);
     border: #fff 1px solid;
+}
+
+.info_c_name{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 3vw 0 0.5vw 0;
+    letter-spacing: 3px;
 }
 
 .info_name {
@@ -833,7 +841,7 @@ nav ul li a:hover {
     /*About Page*/
 
     .article_block {
-        padding: 10vw 0;
+        padding: 150px 0;
         max-width: 100%;
         min-height: 100vh;
     }
@@ -862,18 +870,22 @@ nav ul li a:hover {
         width: 30%;
         padding-bottom: 0;
         border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .info_img {
-        background-image: url(img/portfolio-img.webp);
-        width: 10rem;
-        height: 10rem;
+        width: 20vw;
+        height: 20vw;
+        max-width: 250px;
+        max-height: 250PX;
         margin: 0 auto 10px auto;
-        background-position: center;
-        background-size: cover;
-        border-radius: 50%;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.20);
-        border: #fff 1px solid;
+    }
+
+    .info_c_name{
+        margin: 0.5vw 0 0.2vw 0;
+        font-size: 1.8rem;
     }
 
     .info_name {
@@ -937,7 +949,7 @@ nav ul li a:hover {
         margin-bottom: 5px;
     }
 
-    /*portfolio*/
+    
     /*portfolio page*/
 
     .portfolio_block {
@@ -951,9 +963,9 @@ nav ul li a:hover {
     }
 
     .portfolio_link {
-        width: 50vw;
-        height: 15vw;
-        max-width: 80%;
+        width: 80vw;
+        height: 23vw;
+        max-width: 1000px;
         max-height: 250px;
         margin: 3vw auto;
     }
