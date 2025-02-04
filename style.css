@@ -370,6 +370,7 @@ nav ul li a:hover {
     height: 12%;
 }
 
+/*about page*/
 
 .article_block {
     background-color: #fff;
@@ -396,10 +397,10 @@ nav ul li a:hover {
     border: #fff 1px solid;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
-    padding: 0 30px;
+    padding: 20px 30px;
 }
 
-.info {
+.info_me {
     margin: 30px auto;
     padding-bottom: 20px;
     border-bottom: #fff 1px solid;
@@ -480,12 +481,12 @@ nav ul li a:hover {
     width: 100%;
 }
 
-.link_block{
+.link_block {
     width: 100%;
     margin: 0;
 }
 
-.portfolio_link{
+.portfolio_link {
     width: 90vw;
     height: 30vw;
     background-image: linear-gradient(120deg, #93efbc 30%, #57d5ff 100%);
@@ -511,16 +512,17 @@ nav ul li a:hover {
 .portfolio_link_filter {
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
     transition: all 1s 0s ease-in-out;
 }
 
 .portfolio_link_filter:hover {
     backdrop-filter: hue-rotate(180deg);
 }
+.portfolio_link_filter a{
 
-.option_block{
+}
+
+.option_block {
     display: flex;
     width: 100%;
     height: 100%;
@@ -572,6 +574,10 @@ nav ul li a:hover {
 }
 
 @media (min-width:768px) {
+    body {
+        font-size: 12px;
+    }
+
     .menu_icon {
         display: none;
     }
@@ -640,7 +646,7 @@ nav ul li a:hover {
     }
 
     .item {
-        height: 30vw;
+        height: 50vw;
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-rows: 100%;
@@ -653,7 +659,8 @@ nav ul li a:hover {
         height: 100%;
         background-color: black;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
+        padding: 20px;
     }
 
     .item_content {
@@ -667,7 +674,7 @@ nav ul li a:hover {
 
     .item_title p {
         width: 100%;
-        font-size: 5vw;
+        font-size: 5rem;
         padding: 2vw;
         line-height: 7vw;
         color: #fff;
@@ -757,11 +764,6 @@ nav ul li a:hover {
         font-size: 1.2vw;
     }
 
-    .option_block {
-        max-width: 80%;
-        max-height: 300px;
-    }
-
     .footer {
         padding: 0;
         width: 100%;
@@ -805,10 +807,6 @@ nav ul li a:hover {
         margin: 0;
     }
 
-    .article_block{
-        padding-top: 8vw;
-    }
-
     .contact_icon {
         width: 1.5vw;
         height: 1.5vw;
@@ -832,14 +830,193 @@ nav ul li a:hover {
         margin-top: -0.1vw;
     }
 
-    /*portfolio*/
-    .portfolio_block h1{
-        font-size: 3vw;
+    /*About Page*/
+
+    .article_block {
+        padding: 10vw 0;
+        max-width: 100%;
+        min-height: 100vh;
     }
-    .portfolio_link{
-        width: 90vw;
-        height: 20vw;
+
+    .article_block h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .about_block {
+        background-image: linear-gradient(150deg, #D5F5F2 0%, #29c8ff 100%);
+    }
+
+    .info_block {
+        display: flex;
         max-width: 1200px;
-        max-height: 350px;
+        margin: 2vw auto;
+        border: #fff 1px solid;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+        padding: 2vw;
+    }
+
+    .info_me {
+        width: 30%;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .info_img {
+        background-image: url(img/portfolio-img.webp);
+        width: 10rem;
+        height: 10rem;
+        margin: 0 auto 10px auto;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.20);
+        border: #fff 1px solid;
+    }
+
+    .info_name {
+        color: black;
+        text-align: center;
+        width: 100%;
+        height: 2rem;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info_name p {
+        border-left: #fff 2px solid;
+        border-right: #fff 2px solid;
+        background-color: #ffffff30;
+        padding: 0.5rem 1.5rem;
+        border-radius: 20px;
+        font-weight: 700;
+    }
+
+    .info_introduce {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .info_title {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    .info_title p {
+        display: inline-block;
+        padding: 5px;
+        border-bottom: #fff 1px solid;
+    }
+
+    .info_content {
+        text-align: center;
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+    }
+
+    .info_content p {
+        font-weight: 300;
+    }
+
+    .info_date {
+        font-size: 0.6rem;
+        color: #7d7d7d;
+        margin-top: 5px;
+        font-weight: 200;
+    }
+
+    .info_content ul li {
+        margin-bottom: 5px;
+    }
+
+    /*portfolio*/
+    /*portfolio page*/
+
+    .portfolio_block {
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .link_block {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .portfolio_link {
+        width: 50vw;
+        height: 15vw;
+        max-width: 80%;
+        max-height: 250px;
+        margin: 3vw auto;
+    }
+
+    .portfolio_link a {
+    }
+
+    .portfolio_link:hover {
+    }
+
+    .portfolio_link_filter {
+    }
+
+    .portfolio_link_filter:hover {
+
+    }
+
+    .portfolio_link_filter a{
+    }
+
+    .option_block {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 1vw 3vw;
+    }
+
+    .opt_img_block {
+        width: 42%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .opt_img {
+    }
+
+    .opt_img_1 {        
+    }
+
+    .opt_img_2 {
+    }
+
+    .opt_img_3 {
+    }
+
+    .opt_content_block {
+        margin-left: 1vw;
+    }
+
+    .opt_title {
+        font-weight: 700;
+        font-size: 1.8rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .opt_describe {
+        font-weight: 200;
+        color: #5c5c5c;
+        font-size: 1rem;
     }
 }
