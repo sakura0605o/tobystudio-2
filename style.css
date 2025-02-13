@@ -375,6 +375,7 @@ nav ul li a:hover {
 .article_block {
     background-color: #fff;
     width: 100vw;
+    min-height: 90vh;
     padding-top: 30vw;
 }
 
